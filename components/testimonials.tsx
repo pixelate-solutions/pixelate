@@ -36,13 +36,6 @@ const item = {
 export function Testimonials() {
   return (
     <section id="testimonials" className="relative py-20 overflow-hidden">
-      {/* Decorative blob */}
-      <motion.div
-        className="absolute top-0 right-0 w-40 h-40 bg-purple-500 opacity-20 blur-2xl rounded-full"
-        animate={{ scale: [1, 1.2, 1] }}
-        transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
-      />
-
       <div className="container mx-auto px-6 relative z-10">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}

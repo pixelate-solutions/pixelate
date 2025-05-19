@@ -31,13 +31,6 @@ const item = {
 export function Services() {
   return (
     <section id="services" className="relative py-20 overflow-hidden">
-      {/* Decorative accent blob */}
-      <motion.div
-        className="absolute top-0 left-1/2 -translate-x-1/2 w-72 h-72 bg-green-300 opacity-20 blur-3xl rounded-full dark:bg-purple-600"
-        animate={{ scale: [1, 1.15, 1] }}
-        transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut' }}
-      />
-
       <div className="container mx-auto px-6 relative z-10">
         {/* Heading */}
         <motion.h2
