@@ -14,6 +14,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       style={{ colorScheme: 'light' }}
       suppressHydrationWarning
     >
+      <head>
+        <link rel="icon" href="/logo.png" />
+      </head>
       <body>
         <Providers>{children}</Providers>
       </body>

@@ -1,41 +1,94 @@
-// components/Testimonials.tsx
-import { Avatar, AvatarImage } from '@/components/ui/avatar';
+'use client';
+
+import { motion } from 'framer-motion';
 
 const testimonials = [
   {
-    name: 'Jane Doe',
-    role: 'Founder, Acme Corp',
+    name: 'Lila Thompson',
+    // role: 'Marketing Manager, BrightSide Inc',
     feedback:
-      'Pixelate Solutions transformed our online presence. The site is stunning and performance is top-notch.',
-    avatar: '/images/testimonial1.jpg',
+      'Pixelate Solutions revamped our website—visitor engagement has never been so high!',
   },
   {
-    name: 'John Smith',
-    role: 'CEO, Startupify',
-    feedback: 'Professional, attentive, and creative. Highly recommend their services!',
-    avatar: '/images/testimonial2.jpg',
+    name: 'Marcus Nguyen',
+    // role: 'Product Lead, NextEdge',
+    feedback:
+      'Their attention to detail and proactive communication made the entire process seamless.',
+  },
+  {
+    name: 'Sophia Robertson',
+    // role: 'CTO, GreenWave Solutions',
+    feedback:
+      'They took our complex requirements and turned them into a beautiful, user-friendly platform.',
   },
 ];
 
+const container = {
+  hidden: { opacity: 1 },
+  show: { opacity: 1, transition: { staggerChildren: 0.3 } },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 30 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: 'easeOut' } },
+};
+
 export function Testimonials() {
   return (
-    <section id="testimonials" className="container mx-auto px-6 py-20">
-      <h2 className="text-3xl font-bold text-center mb-12">Testimonials</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {testimonials.map((t) => (
-          <div key={t.name} className="p-6 border border-gray-200 dark:border-gray-700 rounded-lg">
-            <div className="flex items-center space-x-4 mb-4">
-              <Avatar>
-                <AvatarImage src={t.avatar} alt={t.name} />
-              </Avatar>
-              <div>
-                <p className="font-semibold">{t.name}</p>
-                <p className="text-sm text-gray-500">{t.role}</p>
+    <section id="testimonials" className="relative py-20 overflow-hidden">
+      {/* Decorative blob */}
+      <motion.div
+        className="absolute top-0 right-0 w-40 h-40 bg-purple-500 opacity-20 blur-2xl rounded-full"
+        animate={{ scale: [1, 1.2, 1] }}
+        transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
+      />
+
+      <div className="container mx-auto px-6 relative z-10">
+        <motion.h2
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-4xl md:text-5xl font-extrabold text-center mb-12 text-gray-900 dark:text-gray-100"
+        >
+          Testimonials
+        </motion.h2>
+
+        <motion.div
+          variants={container}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.3 }}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
+          {testimonials.map((t) => (
+            <motion.div
+              key={t.name}
+              variants={item}
+              className="bg-white/80 dark:bg-gray-800/80 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow backdrop-blur-md"
+            >
+              <p className="italic text-gray-700 dark:text-gray-300 mb-6">
+                “{t.feedback}”
+              </p>
+              <div className="flex items-center space-x-4">
+                {/* Initials avatar */}
+                <div className="h-12 w-12 bg-gradient-to-br from-green-400 to-purple-500 rounded-full flex items-center justify-center text-white font-bold">
+                  {t.name
+                    .split(' ')
+                    .map((n) => n[0])
+                    .join('')}
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-900 dark:text-gray-100">
+                    {t.name}
+                  </p>
+                  {/* <p className="text-sm text-gray-500 dark:text-gray-400">
+                    {t.role}
+                  </p> */}
+                </div>
               </div>
-            </div>
-            <p className="text-gray-600 dark:text-gray-300">"{t.feedback}"</p>
-          </div>
-        ))}
+            </motion.div>
+          ))}
+        </motion.div>
       </div>
     </section>
   );

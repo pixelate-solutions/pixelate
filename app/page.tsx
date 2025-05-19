@@ -2,7 +2,7 @@
 import { Hero } from '@/components/hero';
 import { Features } from '@/components/features';
 import { Testimonials } from '@/components/testimonials';
-import { Pricing } from '@/components/pricing';
+import { Services } from '@/components/services';
 import { Contact } from '@/components/contact';
 import { Navbar } from '@/components/navbar';
 import { Footer } from '@/components/footer';
@@ -13,9 +13,9 @@ export default function HomePage() {
       <Navbar />
       <Hero />
       <Features />
-      <Testimonials />
-      <Pricing />
+      <Services />
       <Contact />
+      <Testimonials />
       <Footer />
     </>
   );
