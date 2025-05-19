@@ -34,9 +34,9 @@ const item = {
   show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } },
 };
 
-export function Features() {
+export function Gallery() {
   return (
-    <section id="features" className="relative py-20 overflow-hidden">
+    <section id="gallery" className="relative py-20 overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
         {/* Heading */}
         <motion.h2
@@ -77,7 +77,7 @@ export function Features() {
                   priority
                 />
               </div>
-              
+
               {/* Text */}
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100">

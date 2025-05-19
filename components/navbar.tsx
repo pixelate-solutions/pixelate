@@ -18,7 +18,7 @@ export function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-4">
-          <Link href="#features" className="hover:text-gray-500 font-bold">Features</Link>
+          <Link href="#gallery" className="hover:text-gray-500 font-bold">Gallery</Link>
           <Link href="#services" className="hover:text-gray-500 font-bold">Services</Link>
           <Link href="#contact" className="hover:text-gray-500 font-bold">Contact</Link>
           <ThemeToggle />
@@ -61,11 +61,11 @@ export function Navbar() {
 
           <div className="flex flex-col items-center justify-center h-full space-y-6">
             <Link
-              href="#features"
+              href="#gallery"
               className="text-xl font-medium hover:scale-[105%] border-y border-gray-300 transition-all w-full text-center py-6 rounded-lg"
               onClick={() => setMobileOpen(false)}
             >
-              Features
+              Gallery
             </Link>
             <Link
               href="#services"

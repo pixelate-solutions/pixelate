@@ -1,6 +1,6 @@
 // app/page.tsx
 import { Hero } from '@/components/hero';
-import { Features } from '@/components/features';
+import { Gallery } from '@/components/gallery';
 import { Testimonials } from '@/components/testimonials';
 import { Services } from '@/components/services';
 import { Contact } from '@/components/contact';
@@ -12,7 +12,7 @@ export default function HomePage() {
     <>
       <Navbar />
       <Hero />
-      <Features />
+      <Gallery />
       <Services />
       <Contact />
       <Testimonials />

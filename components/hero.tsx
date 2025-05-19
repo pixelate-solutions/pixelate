@@ -92,7 +92,7 @@ export function Hero() {
       {/* Scroll indicator */}
     <motion.div
       onClick={() => {
-        const next = document.getElementById('features')
+        const next = document.getElementById('gallery')
         if (next) {
           next.scrollIntoView({ behavior: 'smooth' })
         }
