@@ -1,12 +1,11 @@
 // pages/TermsOfService.tsx
 'use client';
 
-import { FC } from 'react';
 import { Navbar } from '@/components/navbar';
 import { ArrowLeftFromLine } from 'lucide-react';
 import Link from 'next/link';
 
-export const TermsOfService: FC = () => {
+export default function TermsOfService() {
   return (
     <>
       <Navbar />
@@ -269,5 +268,3 @@ export const TermsOfService: FC = () => {
     </>
   );
 };
-
-export default TermsOfService;

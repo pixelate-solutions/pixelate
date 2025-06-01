@@ -1,12 +1,11 @@
-// pages/PrivacyPolicy.tsx
 'use client';
 
-import { FC } from 'react';
 import { Navbar } from '@/components/navbar';
 import { ArrowLeftFromLine } from 'lucide-react';
 import Link from 'next/link';
 
-export const PrivacyPolicy: FC = () => {
+export default function PrivacyPolicy() {
+
   return (
     <>
       <Navbar />
@@ -167,5 +166,3 @@ export const PrivacyPolicy: FC = () => {
     </>
   );
 };
-
-export default PrivacyPolicy;

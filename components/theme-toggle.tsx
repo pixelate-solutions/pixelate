@@ -18,7 +18,7 @@ export function ThemeToggle() {
     <Button
       variant="ghost"
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-      className="p-2 hover:cursor-pointer hover:scale-[105%]"
+      className="p-2 hover:cursor-pointer hover:scale-[105%] hover:bg-gray-300"
     >
       {mounted ? (
         theme === 'dark' ? (
