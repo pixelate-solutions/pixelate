@@ -1,6 +1,6 @@
 // app/page.tsx
 import { Hero } from '@/components/hero';
-import { Gallery } from '@/components/gallery';
+// import { WebGallery } from '@/components/web-gallery';
 // import { Testimonials } from '@/components/testimonials';
 import { Services } from '@/components/services';
 import { Contact } from '@/components/contact';
@@ -12,7 +12,7 @@ export default function HomePage() {
     <>
       <Navbar />
       <Hero />
-      <Gallery />
+      {/* <WebGallery /> now added to the services page */}
       <Services />
       <Contact />
       {/* <Testimonials /> */}

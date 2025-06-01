@@ -1,45 +1,25 @@
+// components/services/Services.tsx
 'use client';
 
-import { motion } from 'framer-motion';
-import { CheckCircle } from 'lucide-react';
+import { FC } from 'react';
+import { AISection } from './ai-section';
+import { WebSection } from './web-section';
+import { AIGallery } from './ai-gallery';
+import { WebGallery } from './web-gallery';
 
-const services = [
-  'Responsive, Mobile-First Pages',
-  'Custom Design & Branding',
-  'Personalized Domains & Professional Emails',
-  'API Integrations & Webhooks',
-  'Dynamic Routing & Single-Page Apps',
-  'Unlimited Revisions & Iterations',
-  'Payment Gateway Setup (Stripe, PayPal, etc.)',
-  'Blog Integration with Dynamic Routing',
-  'SEO & Performance Optimization',
-  'Accessibility (WCAG) Compliance',
-  'Analytics & Tracking',
-  'Ongoing Maintenance & Support',
-];
-
-const container = {
-  hidden: { opacity: 1 },
-  show: { opacity: 1, transition: { staggerChildren: 0.15 } },
-};
-
-const item = {
-  hidden: { opacity: 0, y: 20 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } },
-};
-
-export function Services() {
+export const Services: FC = () => {
   return (
     <section id="services" className="relative py-20 overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
-        {/* Heading */}
+        {/* If you want a main “Our Services” heading+subtitle, you can uncomment below: */}
+        {/*
         <motion.h2
-          className="text-4xl md:text-5xl font-extrabold text-center mb-6 text-gray-900 dark:text-gray-100"
+          className="text-4xl md:text-5xl font-extrabold text-center mb-6 text-gray-900 dark:text-gray-100 rounded-xl border-t-2 border-gray-300 pt-6"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
-          Custom Web Solutions
+          Our Services
         </motion.h2>
         <motion.p
           className="text-center text-lg text-gray-600 dark:text-gray-300 mb-12 max-w-2xl mx-auto"
@@ -47,29 +27,19 @@ export function Services() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1.0, ease: 'easeInOut' }}
         >
-          Everything is tailored to your needs. From design & development to deployment & beyond, we handle it all.
+          From building pixel-perfect websites to integrating powerful AI solutions, we tailor everything to
+          your unique needs. Browse below to see how we can help you succeed.
         </motion.p>
+        */}
 
-        {/* Services grid */}
-        <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
-          variants={container}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.3 }}
-        >
-          {services.map((svc) => (
-            <motion.div
-              key={svc}
-              variants={item}
-              className="flex items-start space-x-4 p-6 bg-white/80 dark:bg-gray-800/80 backdrop-blur-md rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300"
-            >
-              <CheckCircle className="w-6 h-6 text-green-500 dark:text-purple-400 mt-1" />
-              <p className="text-gray-700 dark:text-gray-300 font-medium">{svc}</p>
-            </motion.div>
-          ))}
-        </motion.div>
+        {/* ─── AI Section ─── */}
+        <AISection />
+        <AIGallery />
+
+        {/* ─── Web Section ─── */}
+        <WebSection />
+        <WebGallery />
       </div>
     </section>
   );
-}
+};

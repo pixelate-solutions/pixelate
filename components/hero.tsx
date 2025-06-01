@@ -1,3 +1,5 @@
+// components/hero.tsx
+
 'use client';
 
 import Image from 'next/image';
@@ -53,24 +55,23 @@ export function Hero() {
 
       {/* Hero content */}
       <motion.div
-        className="relative z-10 px-6 py-20 max-w-2xl mx-auto"
-        initial="hidden"
-        animate="show"
-      >
+              className="relative z-10 px-6 py-20 max-w-2xl md:max-w-3xl mx-auto"
+              initial="hidden"
+              animate="show"
+            >
         <motion.h1
           variants={textVariant}
-          className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight"
+          className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight text-outline"
         >
           Peace & Purpose, Digitally Delivered
         </motion.h1>
 
-        {/* <motion.p
+        <motion.p
           variants={fadeInVariant}
-          className="mt-6 text-lg md:text-xl text-gray-100 bg-black/40 rounded-xl p-2"
+          className="mt-6 text-xl md:text-2xl text-gray-100 rounded-4xl p-4 max-w-xl mx-auto backdrop-blur-xl"
         >
-          At Pixelate Solutions, we bring peace and purpose by helping others thrive through beautiful,
-          performant websites that engage and convert.
-        </motion.p> */}
+          AI Integration & Web Development
+        </motion.p>
 
         <motion.div variants={fadeInVariant} className="mt-8">
           <Button
@@ -84,37 +85,37 @@ export function Hero() {
               }
             }}
           >
-            Let’s Build Your Website
+            Let’s Build Your Solution
           </Button>
         </motion.div>
       </motion.div>
 
       {/* Scroll indicator */}
-    <motion.div
-      onClick={() => {
-        const next = document.getElementById('gallery')
-        if (next) {
-          next.scrollIntoView({ behavior: 'smooth' })
-        }
-      }}
-      className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-gray-200 cursor-pointer"
-      animate={{ y: [0, 10, 0] }}
-      transition={{ duration: 1.5, repeat: Infinity, ease: 'easeInOut' }}
-    >
-      <svg
-        className="w-8 h-8"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
+      <motion.div
+        onClick={() => {
+          const next = document.getElementById('ai')
+          if (next) {
+            next.scrollIntoView({ behavior: 'smooth' })
+          }
+        }}
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-gray-200 cursor-pointer"
+        animate={{ y: [0, 10, 0] }}
+        transition={{ duration: 1.5, repeat: Infinity, ease: 'easeInOut' }}
       >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M19 9l-7 7-7-7"
-        />
-      </svg>
-    </motion.div>
+        <svg
+          className="w-8 h-8"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M19 9l-7 7-7-7"
+          />
+        </svg>
+      </motion.div>
     </section>
   );
 }

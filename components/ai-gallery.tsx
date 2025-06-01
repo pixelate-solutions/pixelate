@@ -5,22 +5,22 @@ import Image from 'next/image';
 
 const projects = [
   {
-    title: 'Riverstone Painting Co.',
-    description: 'Responsive company site with modern design.',
-    src: '/riverstone.png',
-    href: 'https://painting-co.vercel.app',
+    title: 'Coming soon...',
+    description: 'Coming soon...',
+    src: '/coming-soon.png',
+    href: 'https://pixelate.solutions',
   },
   {
-    title: 'LocalPulse',
-    description: 'High-converting landing page with interactive API calls.',
-    src: '/local-pulse.png',
-    href: 'https://local-pulse-sandy.vercel.app',
+    title: 'Coming soon... ',
+    description: 'Coming soon...',
+    src: '/coming-soon.png',
+    href: 'https://pixelate.solutions',
   },
   {
-    title: 'Link',
-    description: 'Personalized budgeting site with Stripe & Plaid integration plus AI.',
-    src: '/link.png',
-    href: 'https://link-omega.vercel.app',
+    title: 'Coming soon...  ',
+    description: 'Coming soon...',
+    src: '/coming-soon.png',
+    href: 'https://pixelate.solutions',
   },
 ];
 
@@ -34,9 +34,9 @@ const item = {
   show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } },
 };
 
-export function Gallery() {
+export function AIGallery() {
   return (
-    <section id="gallery" className="relative py-20 overflow-hidden">
+    <section className="relative py-20 overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
         {/* Heading */}
         <motion.h2
@@ -44,9 +44,9 @@ export function Gallery() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
-          className="text-4xl md:text-5xl font-extrabold text-center mb-12 text-gray-900 dark:text-gray-100"
+          className="text-3xl font-extrabold text-center mb-12 text-gray-900 dark:text-gray-100"
         >
-          Recent Projects
+          AI Examples
         </motion.h2>
 
         {/* Projects Grid */}

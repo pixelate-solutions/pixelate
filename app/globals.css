@@ -128,3 +128,12 @@ html {
     @apply bg-background text-foreground;
   }
 }
+
+.text-outline {
+  text-shadow:
+    -1px -1px 0 #555,
+     1px -1px 0 #555,
+    -1px  1px 0 #555,
+     1px  1px 0 #555;
+}
+

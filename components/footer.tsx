@@ -7,8 +7,8 @@ export function Footer() {
       <div className="container mx-auto px-6 text-center">
         <p>&copy; {new Date().getFullYear()} Pixelate Solutions LLC. All rights reserved.</p>
         <div className="flex justify-center space-x-4 mt-2">
-          <Link href="#" className="hover:text-gray-500">Privacy Policy</Link>
-          <Link href="#" className="hover:text-gray-500">Terms of Service</Link>
+          <Link href="/privacy" className="hover:text-gray-500">Privacy Policy</Link>
+          <Link href="/terms" className="hover:text-gray-500">Terms of Service</Link>
         </div>
       </div>
     </footer>

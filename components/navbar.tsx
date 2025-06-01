@@ -18,8 +18,8 @@ export function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-4">
-          <Link href="#gallery" className="hover:text-gray-500 font-bold">Gallery</Link>
-          <Link href="#services" className="hover:text-gray-500 font-bold">Services</Link>
+          <Link href="#ai" className="hover:text-gray-500 font-bold">AI</Link>
+          <Link href="#web" className="hover:text-gray-500 font-bold">Web</Link>
           <Link href="#contact" className="hover:text-gray-500 font-bold">Contact</Link>
           <ThemeToggle />
           {/* <Button
@@ -61,18 +61,18 @@ export function Navbar() {
 
           <div className="flex flex-col items-center justify-center h-full space-y-6">
             <Link
-              href="#gallery"
+              href="#ai"
               className="text-xl font-medium hover:scale-[105%] border-y border-gray-300 transition-all w-full text-center py-6 rounded-lg"
               onClick={() => setMobileOpen(false)}
             >
-              Gallery
+              AI
             </Link>
             <Link
-              href="#services"
-              className="text-xl font-medium hover:scale-[105%] border-b border-gray-300 transition-all w-full text-center pb-6 rounded-lg"
+              href="#web"
+              className="text-xl font-medium hover:scale-[105%] border-y border-gray-300 transition-all w-full text-center py-6 rounded-lg"
               onClick={() => setMobileOpen(false)}
             >
-              Services
+              Web
             </Link>
             <Link
               href="#contact"
