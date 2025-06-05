@@ -177,8 +177,8 @@ export const AISection: FC = () => {
             Custom AI Solutions & Apps
           </h5>
           <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
-            We design and build bespoke AI-powered applications—chatbots, recommendation engines,
-            predictive analytics dashboards, and more—tailored to your exact business workflows.
+              We craft advanced, AI-driven solutions—chatbots, recommendation systems, predictive analytics,
+              and more—custom-built to streamline your operations and align seamlessly with your business goals.
           </p>
         </motion.div>
 
