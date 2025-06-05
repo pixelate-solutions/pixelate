@@ -18,7 +18,7 @@ export function AIGallery() {
         </motion.h2>
 
         {/* Single Video */}
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-2xl mx-auto">
           <video
             src="/WebDemoAI.mp4"
             loop
