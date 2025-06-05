@@ -24,7 +24,9 @@ export function AIGallery() {
             loop
             autoPlay
             muted
-            className="w-full rounded-xl overflow-hidden shadow-lg"
+            playsInline
+            controls={false}
+            className="w-full rounded-xl overflow-hidden shadow-lg pointer-events-none"
           />
         </div>
       </div>
