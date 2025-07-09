@@ -73,7 +73,7 @@ export function Hero() {
           AI Integration & Web Development
         </motion.p>
 
-        <motion.div variants={fadeInVariant} className="mt-8">
+        {/* <motion.div variants={fadeInVariant} className="mt-8">
           <Button
             variant="gradient"
             size="lg"
@@ -87,7 +87,7 @@ export function Hero() {
           >
             Let’s Build Your Solution
           </Button>
-        </motion.div>
+        </motion.div> */}
       </motion.div>
 
       {/* Scroll indicator */}
