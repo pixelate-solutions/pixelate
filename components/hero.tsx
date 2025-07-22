@@ -61,7 +61,7 @@ export function Hero() {
             >
         <motion.h1
           variants={textVariant}
-          className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight text-outline"
+          className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight"
         >
           Peace & Purpose, Digitally Delivered
         </motion.h1>
