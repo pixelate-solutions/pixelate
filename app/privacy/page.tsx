@@ -147,9 +147,8 @@ export default function PrivacyPolicy() {
             <li><strong>Address:</strong><br />
                 <p className='pl-10'>
                 Pixelate Solutions<br />
-                221 West Lake Lansing Road<br />
-                Suite 200<br />
-                East Lansing, MI 48823 USA
+                8319 Pamela Street<br />
+                Shelby Township, MI 48316 USA
                 </p>
             </li>
             <li><strong>Phone:</strong>+1 (616) 320-1776</li>
