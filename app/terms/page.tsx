@@ -243,7 +243,7 @@ export default function TermsOfService() {
             If you have questions or concerns about these Terms, please contact us:
           </p>
           <ul className="list-disc list-inside">
-            <li><strong>Email:</strong> legal@pixelate.solutions</li>
+            <li><strong>Email:</strong> admin@pixelate.solutions</li>
             <li><strong>Address:</strong><br />
               <p className="pl-10">
                 Pixelate Solutions<br />
