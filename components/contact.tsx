@@ -62,10 +62,10 @@ export function Contact() {
                 <Mail className="w-5 h-5 text-cyan-500 mr-3" />
                 <span>admin@pixelate.solutions</span>
               </div>
-              <div className="flex items-center text-slate-900 dark:text-slate-100">
+              {/* <div className="flex items-center text-slate-900 dark:text-slate-100">
                 <MessageSquare className="w-5 h-5 text-amber-500 mr-3" />
                 <span>+1 (616) 320-1776</span>
-              </div>
+              </div> */}
               <div className="flex items-center text-slate-900 dark:text-slate-100">
                 <User className="w-5 h-5 text-emerald-500 mr-3" />
                 <span>Average response time: 1-2 business days</span>
