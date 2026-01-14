@@ -108,12 +108,16 @@ const stack = [
   'Render',
   'AWS',
   'Vercel',
+  'HTML',
+  'CSS',
   'Figma',
-  'Stripe',
   'OpenAI',
+  'Clerk',
+  'Pinecone',
+  'Stripe',
+  'Plaid',
   'Railway',
-  'Tailwind CSS',
-  'Prisma',
+  'Tailwind',
   'MongoDB',
   'Docker',
 ];
@@ -286,7 +290,7 @@ export const Services = () => {
               <p className="mt-3 text-sm text-slate-600 dark:text-slate-300">
                 We use proven platforms that keep experiences fast, secure, and future-proof.
               </p>
-              <div className="mt-6 flex flex-wrap gap-3">
+              <div className="mt-6 flex flex-wrap gap-3 justify-center">
                 {stack.map((item) => (
                   <span
                     key={item}
