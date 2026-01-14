@@ -85,15 +85,15 @@ const processSteps = [
 const engagements = [
   {
     title: 'Launch Sprint',
-    description: 'A focused 4-6 week build to validate ideas and ship an MVP fast.',
+    description: 'A focused build with regular cadence meetings to validate ideas and ship an MVP fast.',
   },
   {
     title: 'Product Partner',
-    description: 'A dedicated squad that owns design and engineering from concept to launch.',
+    description: 'A dedicated developer that owns design and engineering from concept to launch.',
   },
   {
     title: 'Growth Retainer',
-    description: 'Ongoing improvements, experiments, and feature delivery every month.',
+    description: 'Ongoing improvements, experiments, and feature delivery.',
   },
 ];
 
