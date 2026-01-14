@@ -197,7 +197,7 @@ export const Services = () => {
               variants={fadeUp}
               className="mt-4 text-lg text-slate-600 dark:text-slate-300"
             >
-              Every engagement comes with senior oversight, weekly demos, and a clear path to launch.
+              Every engagement comes with professional oversight, regular cadence meetings, and a clear path to launch.
             </motion.p>
           </motion.div>
 
