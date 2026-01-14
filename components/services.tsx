@@ -101,15 +101,21 @@ const stack = [
   'Next.js',
   'React',
   'TypeScript',
+  'JavaScript',
   'Node.js',
   'Python',
   'Postgres',
-  'Supabase',
+  'Render',
   'AWS',
   'Vercel',
   'Figma',
   'Stripe',
   'OpenAI',
+  'Railway',
+  'Tailwind CSS',
+  'Prisma',
+  'MongoDB',
+  'Docker',
 ];
 
 export const Services = () => {
