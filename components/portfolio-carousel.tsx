@@ -107,13 +107,13 @@ export function PortfolioCarousel() {
             variants={fadeUp}
             className="mt-4 font-display text-4xl text-slate-900 dark:text-white md:text-5xl"
           >
-            Launch-ready landing pages, captured in motion.
+            Launch-ready sites, captured in motion.
           </motion.h2>
           <motion.p
             variants={fadeUp}
             className="mt-4 text-lg text-slate-600 dark:text-slate-300"
           >
-            Explore the visuals and layout systems behind our most recent builds.
+            Explore the visuals and results behind our most recent builds.
           </motion.p>
         </motion.div>
 
@@ -122,7 +122,10 @@ export function PortfolioCarousel() {
             <p className="text-xs font-semibold uppercase tracking-[0.35em] text-slate-400 dark:text-slate-500">
               Featured projects
             </p>
-            <div className="flex items-center gap-3">
+            <p className="flex justify-center align-center text-xs font-semibold uppercase tracking-[0.35em] text-slate-300 dark:text-slate-500 sm:hidden">
+              Scroll <ChevronRight className='h-4' />
+            </p>
+            <div className="flex items-center gap-3 hidden sm:flex">
               <Button
                 type="button"
                 variant="outline"
@@ -162,8 +165,8 @@ export function PortfolioCarousel() {
                   variants={fadeUp}
                   className="group relative flex-shrink-0 w-full snap-center px-4 sm:px-6"
                 >
-                  <div className="relative mx-auto max-w-6xl rounded-[36px] border border-white/60 bg-[linear-gradient(120deg,rgba(108,99,163,0.85),rgba(174,122,171,0.78),rgba(245,151,114,0.82))] shadow-[0_30px_80px_-50px_rgba(15,23,42,0.7)] backdrop-blur-2xl transition group-hover:-translate-y-1 group-hover:shadow-[0_40px_90px_-50px_rgba(15,23,42,0.8)] dark:border-slate-800/70">
-                  <div className="absolute inset-0 bg-[radial-gradient(70%_70%_at_0%_0%,rgba(255,255,255,0.25),transparent_60%),radial-gradient(60%_60%_at_100%_0%,rgba(255,255,255,0.12),transparent_55%)]" />
+                  <div className="relative mx-auto max-w-6xl rounded-[36px] border border-white/60 bg-[linear-gradient(120deg,rgba(108,99,163,0.85),rgba(174,122,171,0.78),rgba(245,151,114,0.82))] shadow-[0_30px_80px_-50px_rgba(15,23,42,0.7)] backdrop-blur-2xl transition">
+                  <div className="absolute inset-0 bg-[radial-gradient(70%_70%_at_0%_0%,rgba(255,255,255,0.25),transparent_60%),radial-gradient(60%_60%_at_100%_0%,rgba(255,255,255,0.12),transparent_55%)] rounded-[36px]" />
                   {index === 0 && (
                     <span className="absolute right-6 -top-4 z-20 rounded-full bg-orange-500 px-5 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-white shadow-lg">
                       Latest case study
@@ -197,7 +200,7 @@ export function PortfolioCarousel() {
                             alt={`${project.title} landing page`}
                             fill
                             sizes="(min-width: 1024px) 520px, (min-width: 640px) 70vw, 90vw"
-                            className="object-cover transition duration-700 group-hover:scale-105"
+                            className="object-cover transition duration-700"
                             priority={index === 0}
                           />
                         </div>
