@@ -46,7 +46,7 @@ export function Contact() {
           className="mx-auto grid max-w-5xl overflow-hidden rounded-3xl border border-white/60 bg-white/70 shadow-2xl backdrop-blur-2xl dark:border-slate-800/70 dark:bg-slate-900/70 md:grid-cols-2"
         >
           {/* LEFT PANEL */}
-          <div className="p-10 md:p-12 space-y-6">
+          <div className="px-10 pt-10 md:p-12 space-y-6">
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-slate-500 dark:text-slate-400">
               Contact
             </p>

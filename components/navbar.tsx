@@ -26,6 +26,9 @@ export function Navbar() {
           <Link href="#process" className="text-sm font-semibold text-slate-700 dark:text-slate-200 hover:text-slate-500">
             Process
           </Link>
+          <Link href="#portfolio" className="text-sm font-semibold text-slate-700 dark:text-slate-200 hover:text-slate-500">
+            Portfolio
+          </Link>
           <Link href="#contact" className="text-sm font-semibold text-slate-700 dark:text-slate-200 hover:text-slate-500">
             Contact
           </Link>
@@ -69,6 +72,13 @@ export function Navbar() {
               onClick={() => setMobileOpen(false)}
             >
               Process
+            </Link>
+            <Link
+              href="#portfolio"
+              className="text-xl font-semibold hover:scale-[105%] border-y border-slate-200 dark:border-slate-800 transition-all w-full text-center py-6 rounded-lg"
+              onClick={() => setMobileOpen(false)}
+            >
+              Portfolio
             </Link>
             <Link
               href="#contact"
