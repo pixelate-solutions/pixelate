@@ -51,6 +51,7 @@ export async function POST(request: NextRequest) {
     await transporter.sendMail({
       from: `"Pixelate Prototype Program" <${process.env.SMTP_USER}>`,
       to: process.env.PROTOTYPE_RECIPIENT,
+      replyTo: email,
       subject: `Prototype Program lead: ${name}`,
       html: `
         <table width="100%" cellpadding="0" cellspacing="0" style="font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px;">
