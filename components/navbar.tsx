@@ -19,13 +19,15 @@ export function Navbar() {
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center space-x-4">
+        <div className="hidden lg:flex items-center space-x-4">
           <Link href="#services" className="text-sm font-semibold text-slate-700 dark:text-slate-200 hover:text-slate-500">
             Services
           </Link>
           <Link href="#process" className="text-sm font-semibold text-slate-700 dark:text-slate-200 hover:text-slate-500">
             Process
           </Link>
+          <Link href="#pricing" className="text-sm font-semibold text-slate-700 dark:text-slate-200 hover:text-slate-500">
+            Pricing</Link>
           <Link href="#portfolio" className="text-sm font-semibold text-slate-700 dark:text-slate-200 hover:text-slate-500">
             Portfolio
           </Link>
@@ -38,7 +40,7 @@ export function Navbar() {
         </div>
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden focus:outline-none text-slate-900 dark:text-slate-100 hover:cursor-pointer"
+          className="lg:hidden focus:outline-none text-slate-900 dark:text-slate-100 hover:cursor-pointer"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
         >
@@ -48,7 +50,7 @@ export function Navbar() {
 
       {/* Mobile Menu Overlay */}
       {mobileOpen && (
-        <div className="md:hidden fixed inset-0 z-50 bg-white/90 dark:bg-slate-950/90 backdrop-blur-xl">
+        <div className="lg:hidden fixed inset-0 z-50 bg-white/90 dark:bg-slate-950/90 backdrop-blur-xl">
           {/* Close Button (overlay) */}
           <button
             className="absolute top-5 right-5 focus:outline-none text-slate-900 dark:text-slate-100 hover:cursor-pointer"
@@ -73,6 +75,12 @@ export function Navbar() {
             >
               Process
             </Link>
+            <Link
+              href="#pricing"
+              className="text-xl font-semibold hover:scale-[105%] border-y border-slate-200 dark:border-slate-800 transition-all w-full text-center py-6 rounded-lg"
+              onClick={() => setMobileOpen(false)}
+            >
+              Pricing</Link>
             <Link
               href="#portfolio"
               className="text-xl font-semibold hover:scale-[105%] border-y border-slate-200 dark:border-slate-800 transition-all w-full text-center py-6 rounded-lg"

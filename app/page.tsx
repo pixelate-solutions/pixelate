@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { Hero } from '@/components/hero';
 import { Services } from '@/components/services';
 import { PortfolioCarousel } from '@/components/portfolio-carousel';
+import { Pricing } from '@/components/pricing';
 import { Contact } from '@/components/contact';
 import { Navbar } from '@/components/navbar';
 import { Footer } from '@/components/footer';
@@ -20,6 +21,7 @@ export default function HomePage() {
       <Navbar />
       <Hero />
       <Services />
+      <Pricing />
       <PortfolioCarousel />
       <Contact />
       <Footer />
