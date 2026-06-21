@@ -31,7 +31,7 @@ const plans = [
   },
   {
     name: 'Hourly Build',
-    price: '$150',
+    price: '$125',
     cadence: '/hour',
     icon: Clock3,
     accent: 'text-cyan-600 dark:text-cyan-300',
@@ -43,7 +43,7 @@ const plans = [
   },
   {
     name: 'Accelerated Build',
-    price: '$250',
+    price: '$200',
     cadence: '/hour',
     icon: Rocket,
     accent: 'text-amber-600 dark:text-amber-300',
