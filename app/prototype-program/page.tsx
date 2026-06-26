@@ -74,11 +74,11 @@ export default function PrototypeProgramPage() {
             </li>
             <li className="flex items-start gap-2">
               <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-emerald-600 dark:text-emerald-300" />
-              After delivery, you can buy the prototype as-is for <strong>$150</strong>.
+              After delivery, you can buy the prototype as-is for <strong>$500</strong>.
             </li>
             <li className="flex items-start gap-2">
               <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-emerald-600 dark:text-emerald-300" />
-              Or start a full project with Pixelate and receive a <strong>$150 credit</strong> toward your build.
+              Or start a full project with Pixelate and receive a <strong>$500 credit</strong> toward your build.
             </li>
           </ul>
         </div>

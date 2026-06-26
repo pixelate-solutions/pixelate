@@ -23,7 +23,7 @@ const initialForm: PrototypeLeadBody = {
   buildGoal: '',
   capabilityDemo: '',
   timeline: 'Within 30 days',
-  nextStepPreference: 'Use $150 credit toward a full project',
+  nextStepPreference: 'Use $500 credit toward a full project',
 };
 
 export function PrototypeProgramForm() {
@@ -133,8 +133,8 @@ export function PrototypeProgramForm() {
             onChange={(e) => setField('nextStepPreference', e.target.value)}
             className="mt-2 h-11 w-full rounded-xl border border-slate-200 bg-white px-3 text-sm text-slate-900 outline-none transition focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 dark:border-slate-700 dark:bg-slate-950 dark:text-slate-100"
           >
-            <option>Use $150 credit toward a full project</option>
-            <option>Buy the prototype as-is for $150</option>
+            <option>Use $500 credit toward a full project</option>
+            <option>Buy the prototype as-is for $500</option>
             <option>Decide after prototype review</option>
           </select>
         </label>
