@@ -15,8 +15,9 @@ const fraunces = Fraunces({
 })
 
 export const metadata = {
-  title: 'Pixelate Solutions',
-  description: 'Full-stack product and AI engineering studio for modern teams.',
+  title: 'Pixelate Solutions | Custom Software & Product Studio',
+  description:
+    'Pixelate Solutions builds custom websites, web apps, mobile-friendly tools, customer portals, dashboards, automations, and AI platforms for growing businesses.',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

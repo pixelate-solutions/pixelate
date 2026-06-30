@@ -51,11 +51,12 @@ export function Contact() {
               Contact
             </p>
             <h2 className="font-display text-4xl text-slate-900 dark:text-white">
-              Tell us about your next release.
+              Tell us what is slowing your team down.
             </h2>
             <p className="text-base text-slate-600 dark:text-slate-300">
-              Share your goals and timelines. We will respond within two business days with a clear
-              plan, scope, and next steps.
+              Whether it is a manual process, an outdated system, or customers asking for visibility
+              you cannot give them yet, share the details and we will respond within 2 business days
+              with a clear plan and scope.
             </p>
             <div className="space-y-4 text-sm">
               <div className="flex items-center text-slate-900 dark:text-slate-100">
@@ -94,7 +95,7 @@ export function Contact() {
                 <User className="absolute left-3 top-1/2 -mt-2 w-5 h-5 text-slate-400" />
                 <Input
                   className="pl-10 h-12 rounded-xl border-slate-200 bg-white/80 dark:border-slate-800 dark:bg-slate-900"
-                  placeholder="Your Name"
+                  placeholder="Your name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   required
@@ -108,7 +109,7 @@ export function Contact() {
                 <Input
                   className="pl-10 h-12 rounded-xl border-slate-200 bg-white/80 dark:border-slate-800 dark:bg-slate-900"
                   type="email"
-                  placeholder="Your Email"
+                  placeholder="Your email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
@@ -124,7 +125,7 @@ export function Contact() {
               <MessageSquare className="absolute left-3 top-3 w-5 h-5 text-slate-400" />
               <Textarea
                 className="pl-10 pt-3 h-32 rounded-xl border-slate-200 bg-white/80 dark:border-slate-800 dark:bg-slate-900"
-                placeholder="Briefly describe what you want to build"
+                placeholder="What is breaking down in your current process?"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 required

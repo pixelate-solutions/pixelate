@@ -1,13 +1,11 @@
-// app/page.tsx
-import Head from 'next/head';
 import Script from 'next/script';
 import { Hero } from '@/components/hero';
 import { Services } from '@/components/services';
 import { PortfolioCarousel } from '@/components/portfolio-carousel';
-import { Pricing } from '@/components/pricing';
 import { Contact } from '@/components/contact';
 import { Navbar } from '@/components/navbar';
 import { Footer } from '@/components/footer';
+import { Testimonials } from '@/components/testimonials';
 
 export default function HomePage() {
   return (
@@ -44,18 +42,11 @@ export default function HomePage() {
           src="https://px.ads.linkedin.com/collect/?pid=8785852&fmt=gif"
         />
       </noscript>
-      <Head>
-        <title>Pixelate Solutions – Full-Stack Product Studio</title>
-        <meta
-          name="description"
-          content="We design, build, and scale modern digital products with full-stack engineering, AI, and cloud expertise."
-        />
-      </Head>
       <Navbar />
       <Hero />
       <Services />
-      <Pricing />
       <PortfolioCarousel />
+      <Testimonials />
       <Contact />
       <Footer />
     </>

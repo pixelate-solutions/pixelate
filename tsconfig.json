@@ -7,11 +7,10 @@
       "esnext"
     ],
     "strict": true,
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "jsx": "preserve",
     "noEmit": true,
     "incremental": true,
-    "baseUrl": ".",
     "paths": {
       "@/*": [
         "./*"

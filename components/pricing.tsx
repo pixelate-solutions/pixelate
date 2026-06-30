@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { BadgeCheck, Clock3, Rocket, ShieldCheck } from 'lucide-react';
+import { BadgeCheck, Clock3, ReceiptText, ShieldCheck } from 'lucide-react';
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
@@ -18,54 +18,54 @@ const fadeUp = {
 
 const plans = [
   {
-    name: 'FREE Proof of Concept',
+    name: 'Free Feasibility Prototype',
     price: '$0',
     cadence: 'one-time',
     icon: BadgeCheck,
     accent: 'text-emerald-600 dark:text-emerald-300',
     points: [
-      'Small, focused prototype to prove feasibility',
-      'Clear scope, timeline, and technical recommendation',
-      'No commitment required to continue',
+      'Small, focused prototype proving out your highest-risk business workflow',
+      'Clear recommendation before you commit to a full build',
+      'No commitment required to continue into paid development',
     ],
   },
   {
-    name: 'Hourly Build',
-    price: '$125',
+    name: 'Flat-Rate Delivery',
+    price: '$100',
     cadence: '/hour',
     icon: Clock3,
     accent: 'text-cyan-600 dark:text-cyan-300',
-    points: [
-      'Ideal for flexible, incremental development',
-      'Transparent time tracking and weekly updates',
-      'Great for MVPs and feature-by-feature delivery',
-    ],
-  },
-  {
-    name: 'Accelerated Build',
-    price: '$200',
-    cadence: '/hour',
-    icon: Rocket,
-    accent: 'text-amber-600 dark:text-amber-300',
-    points: [
-      'Priority scheduling and faster turnaround',
-      'Best for urgent launches and tight deadlines',
-      'Higher throughput with a tighter feedback loop',
-    ],
-  },
-  {
-    name: 'Full Support Retainer',
-    price: '3%',
-    cadence: '/month',
-    annual: '2.5%/month (billed annually)',
-    savings: 'Applies to total project cost',
-    icon: ShieldCheck,
-    accent: 'text-blue-600 dark:text-blue-300',
     featured: true,
     points: [
-      'Domain + hosting services included',
-      'Full support with monitoring and issue response',
-      'Minor changes and iterative improvements included',
+      'Flat hourly rate for scoped custom software builds',
+      'Billed per completed deliverable with no deposit required',
+      'Clear phase-by-phase estimates before work begins',
+    ],
+  },
+  {
+    name: 'No-Markup Delivery Costs',
+    price: '$0',
+    cadence: 'markup',
+    icon: ReceiptText,
+    accent: 'text-amber-600 dark:text-amber-300',
+    points: [
+      'Third-party tools, hosting, and services passed through at cost',
+      'Bug fixes within agreed scope are never billed separately',
+      'Transparent recommendations when outside services are needed',
+    ],
+  },
+  {
+    name: 'Post-Launch Support Plans',
+    price: '[PLACEHOLDER]',
+    cadence: '/month',
+    annual: 'Basic / Standard / Priority',
+    savings: '[PLACEHOLDER] Confirm hours per month and monthly price tiers.',
+    icon: ShieldCheck,
+    accent: 'text-blue-600 dark:text-blue-300',
+    points: [
+      'Basic: [PLACEHOLDER] hours/month for monitoring and small fixes',
+      'Standard: [PLACEHOLDER] hours/month for support and improvements',
+      'Priority: [PLACEHOLDER] hours/month with faster response windows',
     ],
   },
 ];
@@ -92,13 +92,14 @@ export function Pricing() {
             variants={fadeUp}
             className="mt-4 font-display text-4xl text-slate-900 dark:text-white md:text-5xl"
           >
-            Transparent plans with clear delivery options.
+            Clear pricing tied to completed deliverables.
           </motion.h2>
           <motion.p
             variants={fadeUp}
             className="mt-4 text-lg text-slate-600 dark:text-slate-300"
           >
-            Start free, scale hourly, or lock in full support with an annual discount.
+            A flat hourly rate, no deposit, no markup on third-party costs, and optional support
+            plans after launch.
           </motion.p>
         </motion.div>
 
@@ -133,7 +134,7 @@ export function Pricing() {
 
               {plan.annual ? (
                 <div className="mt-2 rounded-lg border border-blue-200/80 bg-blue-100/70 p-3 dark:border-blue-700/50 dark:bg-blue-900/30">
-                  <p className="text-sm font-semibold text-slate-800 dark:text-blue-100">Annual: {plan.annual}</p>
+                  <p className="text-sm font-semibold text-slate-800 dark:text-blue-100">{plan.annual}</p>
                   <p className="mt-1 text-xs text-slate-600 dark:text-blue-200">{plan.savings}</p>
                 </div>
               ) : null}
@@ -146,7 +147,7 @@ export function Pricing() {
                 ))}
               </ul>
 
-              {plan.name === 'FREE Proof of Concept' ? (
+              {plan.name === 'Free Feasibility Prototype' ? (
                 <Link
                   href="/prototype-program"
                   className="mt-5 inline-flex rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-700 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-200"
